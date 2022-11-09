@@ -17,10 +17,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        tableView.delegate = self
-        tableView.dataSource = self
+        setUpTableView()
+    }
+    
+    private func setUpTableView() {
+        
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     
