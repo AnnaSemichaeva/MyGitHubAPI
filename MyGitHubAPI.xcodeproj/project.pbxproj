@@ -59,12 +59,20 @@
 				631707D728EB147500138E42 /* AppDelegate.swift */,
 				631707D928EB147500138E42 /* SceneDelegate.swift */,
 				631707DB28EB147500138E42 /* ViewController.swift */,
-				631707DD28EB147500138E42 /* Main.storyboard */,
 				631707E028EB147700138E42 /* Assets.xcassets */,
-				631707E228EB147700138E42 /* LaunchScreen.storyboard */,
+				633AA6BF291C450900DF597F /* Storyboards */,
 				631707E528EB147700138E42 /* Info.plist */,
 			);
 			path = MyGitHubAPI;
+			sourceTree = "<group>";
+		};
+		633AA6BF291C450900DF597F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				631707DD28EB147500138E42 /* Main.storyboard */,
+				631707E228EB147700138E42 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
