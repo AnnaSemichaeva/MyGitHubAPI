@@ -16,6 +16,10 @@
 		63833FC0292002920077964D /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63833FBF292002920077964D /* TitleView.swift */; };
 		63833FC32920033F0077964D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63833FC22920033F0077964D /* Constants.swift */; };
 		63833FC6292004630077964D /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63833FC5292004630077964D /* Constraints.swift */; };
+		63833FC92920165A0077964D /* ReposTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63833FC82920165A0077964D /* ReposTableViewCell.swift */; };
+		63833FCC2920171C0077964D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63833FCB2920171C0077964D /* GradientView.swift */; };
+		63833FCE292018780077964D /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63833FCD292018780077964D /* PaddingLabel.swift */; };
+		63833FD029201A000077964D /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63833FCF29201A000077964D /* WebImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		63833FBF292002920077964D /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		63833FC22920033F0077964D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		63833FC5292004630077964D /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		63833FC82920165A0077964D /* ReposTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposTableViewCell.swift; sourceTree = "<group>"; };
+		63833FCB2920171C0077964D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		63833FCD292018780077964D /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		63833FCF29201A000077964D /* WebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,7 @@
 		631707D628EB147500138E42 /* MyGitHubAPI */ = {
 			isa = PBXGroup;
 			children = (
+				63833FC72920163D0077964D /* View */,
 				63833FC4292004430077964D /* Helpers */,
 				63833FC1292002EF0077964D /* LayoutCalculations */,
 				63833FBE2920025C0077964D /* CustomViews */,
@@ -88,6 +97,9 @@
 			isa = PBXGroup;
 			children = (
 				63833FBF292002920077964D /* TitleView.swift */,
+				63833FCB2920171C0077964D /* GradientView.swift */,
+				63833FCD292018780077964D /* PaddingLabel.swift */,
+				63833FCF29201A000077964D /* WebImageView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -106,6 +118,14 @@
 				63833FC5292004630077964D /* Constraints.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		63833FC72920163D0077964D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63833FC82920165A0077964D /* ReposTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,11 +199,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63833FC92920165A0077964D /* ReposTableViewCell.swift in Sources */,
 				63833FC32920033F0077964D /* Constants.swift in Sources */,
 				631707DC28EB147500138E42 /* ViewController.swift in Sources */,
+				63833FD029201A000077964D /* WebImageView.swift in Sources */,
 				631707D828EB147500138E42 /* AppDelegate.swift in Sources */,
 				631707DA28EB147500138E42 /* SceneDelegate.swift in Sources */,
 				63833FC6292004630077964D /* Constraints.swift in Sources */,
+				63833FCE292018780077964D /* PaddingLabel.swift in Sources */,
+				63833FCC2920171C0077964D /* GradientView.swift in Sources */,
 				63833FC0292002920077964D /* TitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
