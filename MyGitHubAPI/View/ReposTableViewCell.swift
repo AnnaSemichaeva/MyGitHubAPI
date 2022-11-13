@@ -148,15 +148,15 @@ class ReposTableViewCell: UITableViewCell {
         cardView.addSubview(repoDescription)
     }
     
-//    func setData(viewModel: TableViewCellViewModel){
-//        repoId.text = viewModel.repoId
-//        repoName.text = viewModel.repoName
-//        ownerName.text = viewModel.repoOwnerName
-//        repoDescription.text = viewModel.repoDescription
-//        repoOwnerImageView.set(imageURL: viewModel.repoOwnerAvatarUrl)
-//        
-//        // MARK: hard 'constraints' by frame
-//        repoDescription.frame = viewModel.repoCellSizes.repoDescriptionFrame
-//    }
+    func setData(viewModel: TableViewCellViewModel){
+        repoId.text = viewModel.repoId
+        repoName.text = viewModel.repoName
+        ownerName.text = viewModel.repoOwnerName
+        repoDescription.text = viewModel.repoDescription
+        repoOwnerImageView.set(imageURL: viewModel.repoOwnerAvatarUrl)
+        
+        // MARK: hard 'constraints' by frame
+        repoDescription.frame = viewModel.repoCellSizes.repoDescriptionFrame
+    }
 }
 

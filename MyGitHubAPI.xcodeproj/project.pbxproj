@@ -20,6 +20,15 @@
 		63833FCC2920171C0077964D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63833FCB2920171C0077964D /* GradientView.swift */; };
 		63833FCE292018780077964D /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63833FCD292018780077964D /* PaddingLabel.swift */; };
 		63833FD029201A000077964D /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63833FCF29201A000077964D /* WebImageView.swift */; };
+		63833FD3292132D40077964D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63833FD2292132D40077964D /* ViewModel.swift */; };
+		63833FD5292133050077964D /* TableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63833FD4292133050077964D /* TableViewCellViewModel.swift */; };
+		63833FD9292134AA0077964D /* RepoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63833FD8292134AA0077964D /* RepoDetailsViewController.swift */; };
+		63833FDC2921351E0077964D /* RepositoryOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63833FDB2921351E0077964D /* RepositoryOwner.swift */; };
+		63833FDE2921354A0077964D /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63833FDD2921354A0077964D /* Repository.swift */; };
+		63833FE02921357A0077964D /* RepoCellSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63833FDF2921357A0077964D /* RepoCellSizes.swift */; };
+		63833FE2292135BA0077964D /* RepoCellLayoutCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63833FE1292135BA0077964D /* RepoCellLayoutCalculator.swift */; };
+		63833FE4292136500077964D /* NetworkingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63833FE3292136500077964D /* NetworkingHelpers.swift */; };
+		63833FE62921367B0077964D /* UIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63833FE52921367B0077964D /* UIHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +47,15 @@
 		63833FCB2920171C0077964D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		63833FCD292018780077964D /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		63833FCF29201A000077964D /* WebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
+		63833FD2292132D40077964D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		63833FD4292133050077964D /* TableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModel.swift; sourceTree = "<group>"; };
+		63833FD8292134AA0077964D /* RepoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailsViewController.swift; sourceTree = "<group>"; };
+		63833FDB2921351E0077964D /* RepositoryOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryOwner.swift; sourceTree = "<group>"; };
+		63833FDD2921354A0077964D /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		63833FDF2921357A0077964D /* RepoCellSizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCellSizes.swift; sourceTree = "<group>"; };
+		63833FE1292135BA0077964D /* RepoCellLayoutCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCellLayoutCalculator.swift; sourceTree = "<group>"; };
+		63833FE3292136500077964D /* NetworkingHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHelpers.swift; sourceTree = "<group>"; };
+		63833FE52921367B0077964D /* UIHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,13 +88,14 @@
 		631707D628EB147500138E42 /* MyGitHubAPI */ = {
 			isa = PBXGroup;
 			children = (
+				63833FDA292134FC0077964D /* Model */,
+				63833FD12921329F0077964D /* ViewModel */,
 				63833FC72920163D0077964D /* View */,
 				63833FC4292004430077964D /* Helpers */,
 				63833FC1292002EF0077964D /* LayoutCalculations */,
 				63833FBE2920025C0077964D /* CustomViews */,
 				631707D728EB147500138E42 /* AppDelegate.swift */,
 				631707D928EB147500138E42 /* SceneDelegate.swift */,
-				631707DB28EB147500138E42 /* ViewController.swift */,
 				631707E028EB147700138E42 /* Assets.xcassets */,
 				633AA6BF291C450900DF597F /* Storyboards */,
 				631707E528EB147700138E42 /* Info.plist */,
@@ -108,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				63833FC22920033F0077964D /* Constants.swift */,
+				63833FE1292135BA0077964D /* RepoCellLayoutCalculator.swift */,
 			);
 			path = LayoutCalculations;
 			sourceTree = "<group>";
@@ -116,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				63833FC5292004630077964D /* Constraints.swift */,
+				63833FE3292136500077964D /* NetworkingHelpers.swift */,
+				63833FE52921367B0077964D /* UIHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -124,8 +146,29 @@
 			isa = PBXGroup;
 			children = (
 				63833FC82920165A0077964D /* ReposTableViewCell.swift */,
+				631707DB28EB147500138E42 /* ViewController.swift */,
+				63833FD8292134AA0077964D /* RepoDetailsViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		63833FD12921329F0077964D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				63833FD2292132D40077964D /* ViewModel.swift */,
+				63833FD4292133050077964D /* TableViewCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		63833FDA292134FC0077964D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63833FDB2921351E0077964D /* RepositoryOwner.swift */,
+				63833FDD2921354A0077964D /* Repository.swift */,
+				63833FDF2921357A0077964D /* RepoCellSizes.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,13 +245,22 @@
 				63833FC92920165A0077964D /* ReposTableViewCell.swift in Sources */,
 				63833FC32920033F0077964D /* Constants.swift in Sources */,
 				631707DC28EB147500138E42 /* ViewController.swift in Sources */,
+				63833FDC2921351E0077964D /* RepositoryOwner.swift in Sources */,
+				63833FD3292132D40077964D /* ViewModel.swift in Sources */,
 				63833FD029201A000077964D /* WebImageView.swift in Sources */,
 				631707D828EB147500138E42 /* AppDelegate.swift in Sources */,
+				63833FD5292133050077964D /* TableViewCellViewModel.swift in Sources */,
 				631707DA28EB147500138E42 /* SceneDelegate.swift in Sources */,
+				63833FE4292136500077964D /* NetworkingHelpers.swift in Sources */,
+				63833FE62921367B0077964D /* UIHelpers.swift in Sources */,
 				63833FC6292004630077964D /* Constraints.swift in Sources */,
+				63833FE2292135BA0077964D /* RepoCellLayoutCalculator.swift in Sources */,
+				63833FDE2921354A0077964D /* Repository.swift in Sources */,
 				63833FCE292018780077964D /* PaddingLabel.swift in Sources */,
+				63833FE02921357A0077964D /* RepoCellSizes.swift in Sources */,
 				63833FCC2920171C0077964D /* GradientView.swift in Sources */,
 				63833FC0292002920077964D /* TitleView.swift in Sources */,
+				63833FD9292134AA0077964D /* RepoDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
