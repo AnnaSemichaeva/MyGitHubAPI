@@ -67,7 +67,7 @@
                     <navigationItem key="navigationItem" title="GutHub Repositories" id="dDg-FF-ZAY"/>
                     <connections>
                         <outlet property="tableView" destination="s6Q-hS-zM5" id="djM-cn-VsQ"/>
-                        <segue destination="W06-wC-01q" kind="show" identifier="route" id="lBf-pB-HLf"/>
+                        <segue destination="W06-wC-01q" kind="show" identifier="showRepositoryDetails" id="lBf-pB-HLf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
