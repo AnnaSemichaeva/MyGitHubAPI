@@ -3,12 +3,13 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--GutHub Repositories-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyGitHubAPI" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,18 +20,51 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="s6Q-hS-zM5">
                                 <rect key="frame" x="0.0" y="91" width="390" height="753"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" white="0.64866607043207913" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="FZF-ov-kPg"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="NLu-uP-w1i"/>
+                                </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="knF-PN-oiR" customClass="GradientView" customModule="MyGitHubAPI" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="91" width="390" height="719"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" white="0.75" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wxz-j9-6fR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="s6Q-hS-zM5" secondAttribute="trailing" id="4uW-I9-jgG"/>
                             <constraint firstItem="s6Q-hS-zM5" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="BER-cB-qxb"/>
+                            <constraint firstItem="knF-PN-oiR" firstAttribute="top" secondItem="wxz-j9-6fR" secondAttribute="top" id="E7Z-S6-bzA"/>
+                            <constraint firstItem="wxz-j9-6fR" firstAttribute="trailing" secondItem="knF-PN-oiR" secondAttribute="trailing" id="ccX-sI-Fmh"/>
+                            <constraint firstItem="knF-PN-oiR" firstAttribute="leading" secondItem="wxz-j9-6fR" secondAttribute="leading" id="eFP-q9-al5"/>
                             <constraint firstItem="s6Q-hS-zM5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pVa-Oj-ltH"/>
+                            <constraint firstItem="wxz-j9-6fR" firstAttribute="bottom" secondItem="knF-PN-oiR" secondAttribute="bottom" id="svy-c8-aHc"/>
                             <constraint firstItem="wxz-j9-6fR" firstAttribute="top" secondItem="s6Q-hS-zM5" secondAttribute="top" id="z2f-XK-1xZ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="knF-PN-oiR"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="dDg-FF-ZAY"/>
+                    <navigationItem key="navigationItem" title="GutHub Repositories" id="dDg-FF-ZAY"/>
                     <connections>
                         <outlet property="tableView" destination="s6Q-hS-zM5" id="djM-cn-VsQ"/>
                         <segue destination="W06-wC-01q" kind="show" identifier="route" id="lBf-pB-HLf"/>
@@ -40,17 +74,24 @@
             </objects>
             <point key="canvasLocation" x="926.15384615384608" y="-28.436018957345969"/>
         </scene>
-        <!--Title-->
+        <!--Repo Name Here-->
         <scene sceneID="2CV-Bp-rw6">
             <objects>
-                <viewController id="W06-wC-01q" sceneMemberID="viewController">
+                <viewController id="W06-wC-01q" customClass="RepoDetailsViewController" customModule="MyGitHubAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i6b-3n-alq">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="qD7-uK-6t6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="VQG-OE-hN9"/>
+                    <navigationItem key="navigationItem" title="Repo Name Here" id="VQG-OE-hN9">
+                        <barButtonItem key="rightBarButtonItem" id="YQW-YQ-1pd">
+                            <imageReference key="image" image="square.and.arrow.up.on.square" catalog="system" symbolScale="default"/>
+                            <connections>
+                                <action selector="shareButtonPressed:" destination="W06-wC-01q" id="CKl-EA-Sjx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uNd-Qy-MT6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,6 +117,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="square.and.arrow.up.on.square" catalog="system" width="119" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
