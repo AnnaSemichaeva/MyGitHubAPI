@@ -29,6 +29,7 @@
 		63833FE2292135BA0077964D /* RepoCellLayoutCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63833FE1292135BA0077964D /* RepoCellLayoutCalculator.swift */; };
 		63833FE4292136500077964D /* NetworkingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63833FE3292136500077964D /* NetworkingHelpers.swift */; };
 		63833FE62921367B0077964D /* UIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63833FE52921367B0077964D /* UIHelpers.swift */; };
+		63834024293563BE0077964D /* TaskDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63834023293563BE0077964D /* TaskDescription.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		63833FE1292135BA0077964D /* RepoCellLayoutCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCellLayoutCalculator.swift; sourceTree = "<group>"; };
 		63833FE3292136500077964D /* NetworkingHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHelpers.swift; sourceTree = "<group>"; };
 		63833FE52921367B0077964D /* UIHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelpers.swift; sourceTree = "<group>"; };
+		63834023293563BE0077964D /* TaskDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDescription.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				631707E028EB147700138E42 /* Assets.xcassets */,
 				633AA6BF291C450900DF597F /* Storyboards */,
 				631707E528EB147700138E42 /* Info.plist */,
+				63834023293563BE0077964D /* TaskDescription.swift */,
 			);
 			path = MyGitHubAPI;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				63833FD3292132D40077964D /* ViewModel.swift in Sources */,
 				63833FD029201A000077964D /* WebImageView.swift in Sources */,
 				631707D828EB147500138E42 /* AppDelegate.swift in Sources */,
+				63834024293563BE0077964D /* TaskDescription.swift in Sources */,
 				63833FD5292133050077964D /* TableViewCellViewModel.swift in Sources */,
 				631707DA28EB147500138E42 /* SceneDelegate.swift in Sources */,
 				63833FE4292136500077964D /* NetworkingHelpers.swift in Sources */,
